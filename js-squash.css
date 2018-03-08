@@ -1,0 +1,126 @@
+h1 {
+	font-size: 5vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: whitesmoke
+}
+
+p {
+	font-size: 3.5vh;
+}
+
+.separator {
+	position: relative;
+}
+
+.container {
+	width: 30vw;
+	height: 50px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.container.platform {
+	margin-top: 10vh;
+}
+
+.container.small {
+	margin-top: -10vh;
+	width: 50px;
+}
+.animate {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: green;
+	border-radius: 5px;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+#snake {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#quitButton {
+	display: block;
+	height: 35vw;
+	width: 35vw;
+	position: relative;
+	margin-left: 40vw;
+}
+
+#quitButton span {
+  background-color: orange;
+  display: block;
+  height: 7px;
+  position: absolute;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: transform .75s ease-in-out;
+  -moz-transition: transform .75s ease-in-out;
+  -o-transition: transform .75s ease-in-out;
+  transition: transform .75s ease-in-out;
+  width: 100%;
+  border-radius: 3px;
+}
+
+#quitButton span:nth-child(1) {
+  top: 2.5rem;
+  visibility: hidden;
+}
+
+#quitButton span:nth-child(2) {
+  top: 2.5rem;
+  visibility: hidden;
+}
+
+#quitButton span:nth-child(3) {
+  height: 0%;
+  width: 0%;
+  border-radius: 100%;
+}
+
+#quitButton.isactive span {
+	height: 5%;
+	border-radius: 25%;
+}
+
+#quitButton.is-active span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  visibility: visible;
+}
+
+#quitButton.is-active span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  visibility: visible;
+}
+
+#quitButton.is-active span:nth-child(3) {
+  visibility: hidden;
+}
+
+#score {
+	color: orange;
+
+}
